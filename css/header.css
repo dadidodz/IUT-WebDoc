@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,700&display=swap");
+/******** RESET ********/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/******** LINKS ********/
+.link {
+  position: relative;
+}
+.link:before {
+  background-color: #13387C;
+  bottom: -4px;
+  content: '';
+  height: 2px;
+  position: absolute;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+.link:hover:before {
+  transform: scaleX(1);
+}
+.link:focus {
+  border: #13387C 3px dotted;
+}
+
+/******** GENERAL ********/
+body {
+  font-size: 16px;
+  background-color: #808080;
+}
+
+.mobile {
+  display: none;
+}
+
+.header {
+  border-bottom: #13387C 1px solid;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 1rem 0;
+  background-color: #e6e6e6;
+}
+
+.logo {
+  margin-top: 5px;
+  padding-left: 2%;
+}
+
+.nav-container {
+  align-items: center;
+  display: flex;
+  color: #ffffff;
+}
+
+.nav ul {
+  padding: 0;
+  color: #ffffff;
+}
+@media (min-width: 950px) {
+  .nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.nav-item {
+  list-style: none;
+  padding: 0 1.5rem;
+  color: #ffffff:
+}
+
+.nav-link {
+  color: #13387C;
+  font-family: "Barlow", serif;
+  font-size: 0.92rem;
+  font-style: italic;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+@media (min-width: 1000px) {
+  .nav-link {
+    font-size: 1rem;
+  }
+}
+
+.avatar-container {
+  border: 0;
+  margin-left: 1.5rem;
+}
+
+.avatar {
+  display: block;
+  height: 2.5rem;
+  border-radius: 50%;
+}

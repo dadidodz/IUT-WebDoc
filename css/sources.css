@@ -1,0 +1,62 @@
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+
+
+$h: "Montserrat Alternates";
+$wht: #ffffff;
+$grey: #ffffff;
+$t: #a5a5a5;
+
+
+*, *:before, *:after {
+  @include box-sizing(border-box);}
+
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  font-style: normal;
+  display: block;  
+}
+
+i {
+  font-size: 4em;
+  line-height: 1;}
+
+h5 {
+  font-family: $h;
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 1;
+  margin: .5em; 
+  position: relative;
+  z-index: 99;
+  Color: white;
+  text-align: center;
+}
+
+body {
+  color: $t;
+
+  font-family: $h;
+  font-weight: 400;}
+
+section {
+  width: 33.333333333333333%;
+  float: left;
+  position: relative;
+  height: 20em;
+  overflow: hidden;}
+
+.tile {
+  padding: 4em .9em;
+  position: absolute;
+  width:100%;height:100%;
+  color: white;
+  text-align: center;
+}
+
+.desc {
+  padding-top: 10em;
+  color: white;
+  text-align: left;
+}
